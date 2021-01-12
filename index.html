@@ -13,12 +13,9 @@
                 <a class="active" href="#home">Home</a>
                 <a href="#aboutUs">About Us</a>
                 <!--<a href="#UpcomingLitter">Upcoming Litter</a>-->
-                <a href="#pastPuppies">Past Puppies</a>
+                <a href="#puppies">Puppies</a>
                 <a onclick="openform()" ondblclick="closeform()">Contact</a> <!--Makes it so that our openForm function runs when we click contact-->
             </div>
- 
-            <br>
-            <br>
  
             <div id="home">
                 <br>
@@ -39,7 +36,7 @@
             </div>
  
             <!--About Section-->
-            <div id = "AboutUs">
+            <div id = "aboutUs">
                 <div class="Row" id="About"><!--Get rid of Right and left columns make it just the whole screen.-->
                     <!--Center Column 1 for whole screen-->
                     <div class="Column_1">
@@ -56,72 +53,99 @@
                 </div>
             </div>
 
-            <!--Slideshow section-
-            <div id="UpcomingLitter">
-                <div id="Slideshow_Background">
-                    <div id="Slideshow_Container">
- 
-                        <div class="mySlides fade">
-                            <div class="Slide_Number">1 / 2</div> Need to add here for how many picutres will be added.
-                            <img class="Slide_Show_Images" src="" style="width: 100%">
-                            <div class="text">Add text about upcoming litter picutre</div>
-                        </div>
- 
-                        <div class="mySlides fade">
-                            <div class="Slide_Number">2 / 2</div><Need to add here for how many picutes will be added.
-                            <img class="Slide_Show_Images" src="" style="width: 100%;">
-                            <div class="text"></div>
-                        </div>
-                        <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="Next" onclick="plusSlides(1)">&#10095</a>
+            <h2>Our Puppies!</h2>
+            <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('pastpups')"> Past Puppies</button>
+            <button class="btn" onclick="filterSelection('currentpups')"> Current Puppies</button>
+            </div>
+
+            <!--Portfolio Gallery Grid-->
+            <div id ="puppies">
+                <div class="row">
+                <div class="column pastpups">
+                    <div class="content">
+                    <img src="./Images/All_pups.JPG" alt="All_pups" style="width:100%">
+                    <h4>Puppies from first litter</h4>
+                    <p>Taking them to get there shots at 6 weeks.</p>
                     </div>
-                    <div style="text-align: center;">
-                        <span class="dot" onclick="currentSlide(1)"></span>Need to add for how many picutes we will have
-                        <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
-            </div>-->
-
-            <!--Slideshow section-->
-            <div id="PastPuppies">
-                <div id="Slideshow_Background">
-                    <div id="Slideshow_Container">
-                        <div class="Column_1">
- 
-                            <div class="mySlides">
-                                <div class="Slide_Number">1 / 4<div> <!--Need to add here for how many picutres will be added.-->
-                                <img class="Slide_Show_Images" src="./Images/All_pups.JPG" style="width: 100%">
-                                <div class="text">All of the puppies in a laundry basket going to get their shots!</div>
-                            </div>
-    
-                            <div class="mySlides">
-                                <div class="Slide_Number">2 / 4</div><!--Need to add here for how many picutes will be added.-->
-                                <img class="Slide_Show_Images" src="./Images/Aggie.jpg" style="width: 100%;">
-                                <div class="text">This is Aggie, he is loving life in Cedar City.</div>
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="Slide_Number">3 / 4</div>
-                                <img class="Slide_Show_Images" src="./Images/Chungus.jpg" style="width: 100%;">
-                                <div class="text">This is Buddy, he was the lightest of the group</div>
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="Slide_Number">4 / 4</div>
-                                <img class="Slide_Show_Images" src="./Images/mrt.jpg" style="width: 100%;">
-                                <div class="text">This is Mr.T, he is also loving life in Cedar City!</div>
-                            </div>
-                        </div>
-                        <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="column pastpups">
+                    <div class="content">
+                    <img src="./Images/Aggie.jpg" alt="Aggie" style="width:100%">
+                    <h4>Aggie</h4>
+                    <p>This is Aggie, he lives in Cedar City now with my aunt! He is so smart and playful.</p>
                     </div>
-                    <div style="text-align: center;">
-                        <!--Need to add for how many picutes we will have-->
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <div class="column pastpups">
+                    <div class="content">
+                    <img src="./Images/Chungus.jpg" alt="Chungus" style="width:100%">
+                    <h4>Chungus</h4>
+                    <p>Chungus is the biggest puppy out of the litter, he weighs a total of 12 pounds!</p>
+                    </div>
+                </div>    
+                <div class="column pastpups">
+                    <div class="content">
+                    <img src="./Images/mrt.jpg" alt="Mr.T" style="width:100%">
+                    <h4>Mr.T</h4>
+                    <p>Mr.T is also in Cedar City and is one of the smaller puppies of the litter.</p>
+                    </div>
                 </div>
             </div>
+            <div class="column currentpups">
+                    <div class="content">
+                    <img src="./Images/newpup1.jpg" alt="Dark Pup" style="width:100%">
+                    <h4></h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column currentpups">
+                    <div class="content">
+                    <img src="./Images/newpup2.jpg" alt="Light Girl" style="width:100%">
+                    <h4></h4>
+                    <p></p>
+                    </div>
+                </div>
+
+                <!--<div class="column currentpups">
+                    <div class="content">
+                    <img src="" alt="" style="width:100%">
+                    <h4></h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column currentpups">
+                    <div class="content">
+                    <img src="" alt="" style="width:100%">
+                    <h4></h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column currentpups">
+                    <div class="content">
+                    <img src="" alt="" style="width:100%">
+                    <h4></h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column currentpups">
+                    <div class="content">
+                    <img src="" alt="" style="width: 100%;">
+                    <h4></h4>
+                    <p></p>
+                    </div>
+                </div> -->
+            <!-- END GRID -->
+            
+
+            <!-- <div class="row"> 
+                <div class="column">
+                  <img src="./Images/All_pups.JPG" style="width:100%">
+                  <img src="./Images/Aggie.jpg" style="width:100%">
+                  <img src="./Images/Chungus.jpg" style="width:100%">
+                  <img src="./Images/mrt.jpg" style="width:100%">
+                </div>
+            </div>     -->
  
             <!--Contact Section-->
             <div id="Contact">
@@ -144,9 +168,6 @@
  
             <!--Footer Section-->
             <footer>
-                <p>
-                    <p class="center">&copy; Created by Tristan Hillyard</p>
-                </p>
             </footer>
             <script src="./JavaScript/dogwebsite.js"></script>
     </body>
