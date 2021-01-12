@@ -186,8 +186,11 @@ body.fade-out {
     float: center;
     width: 100%; /*This ensures the column takes up the full amount of the page width */
     padding: 2%;
-    height: 400px;
     background-color: #f2f2f2;
+}
+
+.contact-column{
+    min-height: 400px;;
 }
  
 /* This inserts something after the content of selected elements */
@@ -200,16 +203,17 @@ body.fade-out {
 /*Heading 1 elements */
 h1 {
     text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin-top: 3%;
     color: #1a1a1a;
+    font-size: 36px;
 }
  
 /* Paragraph elements */
 p {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+    text-align: left;
     letter-spacing: 1px;
     font-size: 20px;
     padding-left: 20px;
@@ -269,7 +273,7 @@ img:hover {
 .Pop_Up_Button {
     bottom: 1.75vw;
     right: 1.75vw;
-    width: 25vw;
+    width: auto;
     background-color: white;
     color: black;
     border: solid;
@@ -277,6 +281,8 @@ img:hover {
     position: fixed;
     -webkit-animation: movePopup 5s;
     animation: movePopup 5s;
+    padding: 15px 50px;
+    font-size: 18px;
 }
  
 /* The popup form -hidden by default*/
@@ -357,4 +363,28 @@ footer {
     padding: 2%;
     background-color: white;
 }
- 
+
+.max-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.Home_Text p{
+    text-align: center;
+}
+
+@media(max-width: 960px){
+    #Slideshow_Container{
+        width: 100%;
+    }
+    .Home_Text{
+        margin-top: 250px;
+    }
+}
+
+@media(max-width: 700px){
+    h1{
+        font-size: 28px;
+    }
+}
