@@ -6,7 +6,7 @@ Creating a website for my wife and I so we can show our puppies and have a diffe
 npm start
 ```
 
-Open a browser to [localhost:4000](http://localhost:4000)
+Open a browser to [localhost:4000](http://localhost:1234)
 
 ## Build for production
 
