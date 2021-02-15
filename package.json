@@ -1,0 +1,25 @@
+{
+  "name": "Dog-Website",
+  "version": "1.0.0",
+  "description": "Creating a website for my wife and I so we can show our puppies and have a different form of comminication.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "rm -r dist && parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisjpatty/Dog-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisjpatty/Dog-Website/issues"
+  },
+  "homepage": "https://github.com/chrisjpatty/Dog-Website#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
