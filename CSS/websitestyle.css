@@ -155,10 +155,64 @@ h1 {
     background-color: #f2f2f2;
 }
 
-.contact-column{
+.slides-column {
     min-height: 400px;;
 }
- 
+
+.mySlides {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 4px;
+    margin: auto;
+    max-width: 700px;
+} 
+
+.modal_Images {
+    position: fixed;
+    display: none;
+    overflow: auto;
+    padding-top: 100%;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+/* Modal text */ 
+#caption{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+/* Animation */
+.modal_Images, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.2);}
+    to {transform: scale(1);}
+}
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
 /* This inserts something after the content of selected elements */
 .Row:after {
     content: "";
@@ -327,7 +381,7 @@ button:hover, .form-container .btn:hover {
 }
 
 @media(max-width: 960px){
-    #Slideshow_Container{
+    #myModal{
         width: 100%;
     }
     .Home_Text{
