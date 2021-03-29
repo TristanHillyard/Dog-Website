@@ -1,0 +1,396 @@
+html {
+    scroll-behavior: smooth; /*This ensures that the page scrolling is smooth when the nav bar is clicked */
+} 
+/* General Styling */
+/* Body */
+body {
+    margin: 0%; /* This ensures our site displays all the way to the edge of the browser */
+    opacity: 1; /*this and transition affect the page loading fade in effect */
+    transition: 3s opacity;
+    letter-spacing: .2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+} 
+ 
+body.fade-out {
+    opacity: .1;
+    transition: none;
+}
+ 
+/*NavBar */
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    -webkit-animation:  moveNav 5s;
+    animation: moveNav 5s;
+}
+/* NavBar text */
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+    letter-spacing: .2vw;
+}
+ 
+/* Navbar hover effects */
+.navbar a:hover {
+    background-color: black;
+    color: pink;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+ 
+/*Navbar home button */
+.navbar a.active {
+    background-color: pink;
+}
+ 
+/*End of Navbar Styling */
+ 
+/*Texts over the video */
+.Home_Text {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    padding-top: .1vh;
+    padding-bottom: 1vh;
+    margin-top: 23%;
+    position: relative;
+    -webkit-animation: moveNav 4s;
+    animation: moveNav 4s;
+}
+ 
+/*Table Styling  this section covers the styling of the columns and rows within the table*/
+* {
+    box-sizing: border-box;
+}
+ 
+/*End of table styling */
+
+/* Image styling and different*/
+/* Center website */
+.main {
+    max-width: 100px;
+    margin: auto;
+}
+  
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+  
+.row {
+    margin: 8px -16px;
+}
+  
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+  
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+}
+  
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+  
+  /* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+  
+  /* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+}
+  
+  /* Add a dark background color to the active button */
+.btn.active {
+    background-color: #666;
+     color: white;
+}
+.Column_1 {
+    float: center;
+    width: 100%; /*This ensures the column takes up the full amount of the page width */
+    padding: 2%;
+    background-color: #f2f2f2;
+}
+
+.slides-column {
+    min-height: 400px;;
+}
+
+.mySlides {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 4px;
+    margin: auto;
+    max-width: 700px;
+} 
+
+.modal_Images {
+    position: fixed;
+    display: none;
+    overflow: auto;
+    padding-top: 100%;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+/* Modal text */ 
+#caption{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+/* Animation */
+.modal_Images, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.2);}
+    to {transform: scale(1);}
+}
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* This inserts something after the content of selected elements */
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Heading 1 elements */
+/*h1 {
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a;
+}*/
+
+ 
+/* Paragraph elements */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ 
+center {
+    text-align: center;
+    letter-spacing: .1vw;
+    font-size: 1.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+ 
+a {
+    color: red;
+}
+ 
+center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+ 
+p:hover {
+    color: #00004d;
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+ 
+h1:hover {
+    color: black;
+    font-weight: normal;
+}
+/* End of General Styling */
+ 
+/*contact form styling */
+@keyframes movePopup {
+    from {right: -40vw}
+    to {bottom: 1.75vw;}
+}
+ 
+/* Button used to open the contact form - fixed at the bottom of the page*/
+.Pop_Up_Button {
+    bottom: 1.75vw;
+    right: 1.75vw;
+    width: auto;
+    background-color: white;
+    color: black;
+    border: solid;
+    cursor: pointer;
+    position: fixed;
+    -webkit-animation: movePopup 5s;
+    animation: movePopup 5s;
+    padding: 15px 50px;
+    font-size: 18px;
+}
+ 
+/* The popup form -hidden by default*/
+.form-popup {
+    border: 3px solid #f0f1f0;
+    z-index: 8;
+    display: none;
+    position: fixed;
+    bottom: .5vw;
+    right: .5vw;
+    background:gray;
+}
+ 
+.form-container {
+    max-width: 49vw;
+    padding: 1vw;
+    background-color: white;
+}
+/*Form styling */
+.form-container input[type=text],.form-container input[type=password] {
+    width: 100%;
+    padding: .93vw;
+    margin: .6vw 0 .6vw 0;
+    border: none;
+    background: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+ 
+/*submit button */
+.form-container .btn {
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin-bottom: 1vw;
+}
+ 
+/*Close button*/
+.form-container .cancel {
+    background-color: black;
+    color: white;
+    border-color: gray;
+}
+ 
+/*button styling */
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5vw 1.5vw;
+    border-style: solid;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+ 
+/* hover effect for buttons*/
+button:hover, .form-container .btn:hover {
+    color: white;
+    background-color: darkred;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    border-style: solid;
+    border-color: silver;
+}
+.form-container .cancel:hover {
+    color: white;
+    background-color: darkred;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    border-style: solid;
+    border-color: black;
+}
+ 
+/*footer element */
+.footer {
+    position: absolute ;
+    padding: 2%;
+    background-color: white;
+}
+
+.max-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.Home_Text p{
+    text-align: center;
+}
+
+@media(max-width: 960px){
+    #myModal{
+        width: 100%;
+    }
+    .Home_Text{
+        margin-top: 250px;
+    }
+}
+
+@media(max-width: 700px){
+    h1{
+        font-size: 28px;
+    }
+}
